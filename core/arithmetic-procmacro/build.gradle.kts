@@ -31,7 +31,7 @@ android {
 
     defaultConfig {
         consumerProguardFiles("proguard-rules.pro")
-        ndk.abiFilters.add("arm64-v8a")
+        ndk.abiFilters += listOf("x86", "armeabi-v7a", "x86_64", "arm64-v8a")
     }
 
     packaging {
