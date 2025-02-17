@@ -1,6 +1,8 @@
 [workspace]
 members = [
-    "bindgen"
+    "bindgen",
+
+    "core/arithmetic-procmacro"
 ]
 resolver = "2"
 
