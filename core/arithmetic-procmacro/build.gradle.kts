@@ -1,14 +1,9 @@
 plugins {
     kotlin("multiplatform")
-    id("io.gitlab.trixnity.cargo.kotlin.multiplatform")
-    id("io.gitlab.trixnity.uniffi.kotlin.multiplatform")
+    alias(libs.plugins.gobley.cargo)
+    alias(libs.plugins.gobley.uniffi)
     alias(libs.plugins.kotlin.atomicfu)
     alias(libs.plugins.android.library)
-}
-
-uniffi {
-    bindgenFromPath(rootProject.layout.projectDirectory.dir("bindgen"))
-    generateFromLibrary()
 }
 
 kotlin {

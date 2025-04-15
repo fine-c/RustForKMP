@@ -1,1 +1,0 @@
-class InternalException(message: String) : kotlin.Exception(message)
