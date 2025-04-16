@@ -62,7 +62,7 @@ internal fun execute(
 }
 
 enum class Actions(val actionName: String) {
-    ADD("add"), SUB("sub"), DIV("sub"), EQUAL("equal")
+    ADD("add"), SUB("sub"), DIV("div"), EQUAL("equal")
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
